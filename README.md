@@ -18,5 +18,5 @@ im lazy to always repeat the same task everytime so i share it :D
 - run `grunt on`
 
 ## build mode
--run `grunt dosass` it will compile the sass only
--run `grunt build` it will create zip to folder build
+- run `grunt dosass` it will compile the sass only
+- run `grunt build` it will create zip to folder build
