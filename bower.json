@@ -1,0 +1,27 @@
+{
+  "name": "sass-grunt-template",
+  "description": "create basic css file with grunt and sass",
+  "main": "index.js",
+  "authors": [
+    "raidenz"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "grunt",
+    "sass",
+    "node"
+  ],
+  "homepage": "https://github.com/raidenz/sass-grunt-template",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "libs",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery": "~2.2.0",
+  }
+}

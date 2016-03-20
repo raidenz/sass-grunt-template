@@ -1,0 +1,34 @@
+{
+  "name": "sass-grunt-template",
+  "version": "1.0.0",
+  "description": "create basic css file with grunt and sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"please use grunt command\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raidenz/sass-grunt-template.git"
+  },
+  "keywords": [
+    "grunt",
+    "sass",
+    "node"
+  ],
+  "author": "raidenz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raidenz/sass-grunt-template/issues"
+  },
+  "homepage": "https://github.com/raidenz/sass-grunt-template#readme",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-compress": "^1.1.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "load-grunt-tasks": "^3.4.1"
+  }
+}

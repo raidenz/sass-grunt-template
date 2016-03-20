@@ -1,0 +1,15 @@
+.sidebar{
+	.onairnow-widget{
+		margin-bottom: 40px;
+		h2{
+			margin: 0 0 5px;
+			font-size: 20px;
+			padding: 10px 20px;
+			background-color: $sidebarbg;
+			color: #fff;
+		}
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+}
