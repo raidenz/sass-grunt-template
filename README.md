@@ -11,7 +11,9 @@ im lazy to always repeat the same task everytime so i share it :D
 
 
 ## HOw to use
-- install npm
+- locate your web html on htdoc / www server folder
+- open Gruntfile.js, change 'localhost/changeyourprojectfolder' to your project folder
+- make sure you have nodejs / install npm
 - run `npm install`
 - run `npm install -g browser-sync`
 - run `bower install` just use it if you want css or dependencies install to libs folder

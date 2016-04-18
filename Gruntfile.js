@@ -54,7 +54,7 @@ module.exports = function(grunt){
                 },
                 options: {
                     watchTask: true,
-                    proxy: "localhost/clientthemes/onairwp/"
+                    proxy: "localhost/changeyourprojectfolder"
                     // server: './app',
                     // server: {
                     //     baseDir: "./"
