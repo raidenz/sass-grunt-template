@@ -16,7 +16,7 @@ module.exports = function(grunt){
         sass: {
             dist: {
                 options: {                       // Target options
-                    style: 'expanded'
+                    style: 'expanded' // nested, compact, compressed, expanded.
                 },
                 files: {
                     'style.css': 'sass/style.scss'
@@ -54,11 +54,11 @@ module.exports = function(grunt){
                 },
                 options: {
                     watchTask: true,
-                    proxy: "localhost/changeyourprojectfolder"
+                    // proxy: "localhost/changeyourprojectfolder"
                     // server: './app',
-                    // server: {
-                    //     baseDir: "./"
-                    // }
+                    server: {
+                        baseDir: "./"
+                    }
                 },
             }
         },
