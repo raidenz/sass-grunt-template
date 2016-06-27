@@ -19,7 +19,8 @@ module.exports = function(grunt){
                     style: 'expanded' // nested, compact, compressed, expanded.
                 },
                 files: {
-                    'style.css': 'sass/style.scss'
+                    'css/bootstrap.min.css': 'sass/bootstrap/bootstrap.scss',
+                    'style.css': 'sass/style/style.scss'
                 }
             }
         },
@@ -38,7 +39,7 @@ module.exports = function(grunt){
             },
             build: {
                 expand: true,
-                src: ['**', '!node_modules/**', '!build/**', '!readme.md', '!Gruntfile.js', '!package.json' ],
+                src: ['**', '!node_modules/**', '!build/**', '!readme.md', '!Gruntfile.js', '!package.json' ], //'!psd/**', '!assets/**'
                 dest: 'build/'
             }
         },
