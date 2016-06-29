@@ -11,6 +11,10 @@ module.exports = function(grunt){
             sass: {
                 files: ['**/*.scss'],
                 tasks: ['sass:dist']
+            },
+            concat: {
+                files: ['concat/js/*.js'],
+                tasks: ['concat:dist']
             }
         },
         sass: {
@@ -39,7 +43,7 @@ module.exports = function(grunt){
             },
             build: {
                 expand: true,
-                src: ['**', '!node_modules/**', '!build/**', '!readme.md', '!Gruntfile.js', '!package.json' ], //'!psd/**', '!assets/**'
+                src: ['**', '!node_modules/**', '!build/**','!concat/**', '!readme.md', '!Gruntfile.js', '!package.json' ], //'!psd/**', '!assets/**'
                 dest: 'build/'
             }
         },
@@ -63,6 +67,15 @@ module.exports = function(grunt){
                 },
             }
         },
+        concat: {
+            options: {
+                separator: ';',
+            },
+            dist: {
+                src: 'concat/js/*.js',
+                dest: 'concat/plugins.js'
+            }
+        },
         compress: {
             build: {
                 options: {
@@ -78,7 +91,8 @@ module.exports = function(grunt){
 
     grunt.registerTask('default', []);
     grunt.registerTask('dosass', ['sass:dist']);
-    grunt.registerTask('on', ['browserSync:dev','watch:sass']);
+    grunt.registerTask('doconcat', ['concat:dist']);
+    grunt.registerTask('on', ['browserSync:dev','watch']);
 
     // Build task
     grunt.registerTask( 'build', [
